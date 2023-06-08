@@ -18,11 +18,14 @@ secondSection.appendChild(thirdSectionHeading);
 thirdSection.appendChild(secondSectionHeading);
 
 //TASK 3 - Delete the last section from the DOM, we don't need it anyways
-// var lastSection = document.querySelector("section:last-of-type");
+var lastSection = document.querySelector("section:last-of-type");
 // lastSection.parentNode.removeChild(lastSection);
 
-var thirdSection = document.querySelectorAll("section")[2];
-thirdSection.parentNode.removeChild(thirdSection);
+// var thirdSection = document.querySelectorAll("section")[2];
+// console.log(thirdSection);
+// thirdSection.remove();
 
-// let sections = document.querySelectorAll("section");
-// sections[sections.length - 1].remove();
+let sections = document.querySelectorAll("section")[2];
+sections.removeChild(sections.lastElementChild);
+// let child = sections.length - 1;
+// console.log(child);
